@@ -10,7 +10,7 @@
 from random import choices
 
 def vygeneruj_tuple(delka, max_hodnota):
-    return tuple(choices(range(max_hodnota), k=delka))
+    return tuple(choices(range(max_hodnota + 1), k=delka))
 
 print(
     vygeneruj_tuple(5, 50),
